@@ -2,6 +2,8 @@
 
 Best for learning hiragana.
 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png" width="45%"></img>
+
 ## Run
 
 ```
