@@ -39,8 +39,8 @@ questionlist = [
 ]
 
 print("a/ka/sa/ta/na/ha/ma/ya/ra/wa/n")
-startfrom = input("Choose from: ")
-stopat    = input("to: ")
+startfrom = input("Choose from: ").lower()
+stopat    = input("to: ").lower()
 testlist = []
 answlist = []
 for i in range(len(questionlist)):
@@ -61,7 +61,7 @@ while True:
         break
     curquestindex = randrange(len(testlist))
     print("What is this :" + testlist[curquestindex])
-    answ = input()
+    answ = input().lower()
     if( answ == answlist[curquestindex] ):
         testlist.remove(testlist[curquestindex])
         answlist.remove(answlist[curquestindex])
