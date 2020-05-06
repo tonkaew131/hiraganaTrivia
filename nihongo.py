@@ -53,11 +53,13 @@ for i in range(startindex,stopindex+1):
     for el in questionlist[i][1][1]:
         answlist.append(el)
 wrongcount = 0
-for i in range(len(testlist)):
+while True:
+    if(len(testlist)==0):
+        break
     curquestindex = randrange(len(testlist))
     print("What is this :" + testlist[curquestindex])
     answ = input()
-    if( answ == answlist[curquestindex]):
+    if( answ == answlist[curquestindex] ):
         testlist.remove(testlist[curquestindex])
         answlist.remove(answlist[curquestindex])
         print("Correct!!!")
