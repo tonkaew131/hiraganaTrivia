@@ -16,6 +16,7 @@ questionlist = [
     ["n", [['ん'],["n"]]]
 ]
 
+print("  Welcome to Hiragana Trivia! ")
 print("a/ka/sa/ta/na/ha/ma/ya/ra/wa/n")
 startfrom = input("Choose from: ").lower()
 stopat    = input("to: ").lower()
