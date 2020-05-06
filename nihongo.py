@@ -1,4 +1,5 @@
 from random import randrange
+import time
 
 a   = list("あいうえお")
 Ra  = ["a", "i", "u", "e", "o"]
@@ -53,8 +54,10 @@ for i in range(startindex,stopindex+1):
     for el in questionlist[i][1][1]:
         answlist.append(el)
 wrongcount = 0
+starttime = time.time()
 while True:
     if(len(testlist)==0):
+        endtime = time.time()
         break
     curquestindex = randrange(len(testlist))
     print("What is this :" + testlist[curquestindex])
@@ -66,4 +69,5 @@ while True:
     else:
         print("Wrong, please try again")
         wrongcount += 1
-print("You have finish from {} to {} with {} mistakes".format(startfrom,stopat,wrongcount))
+print("Time elapsed : " + str(round(endtime-starttime, 2)) + " seconds")
+print("You have finish from {}({}) to {}({}) with {} mistakes".format(questionlist[startindex][1][0][0],startfrom,questionlist[stopindex][1][0][0],stopat,wrongcount))
