@@ -23,7 +23,7 @@ Rwa = ["wa","wi","we","wo"]
 n   = list("ん")
 Rn  = ["n"]
 
-jibril = [
+questionlist = [
     ["a", [a,Ra]],
     ["ka",[ka,Rka]],
     ["sa",[sa,Rsa]],
@@ -42,15 +42,15 @@ startfrom = input("Choose from: ")
 stopat    = input("to: ")
 testlist = []
 answlist = []
-for i in range(len(jibril)):
-    if(startfrom==jibril[i][0]):
+for i in range(len(questionlist)):
+    if(startfrom==questionlist[i][0]):
         startindex = i
-    if(stopat==jibril[i][0]):
+    if(stopat==questionlist[i][0]):
         stopindex = i
 for i in range(startindex,stopindex+1):
-    for el in jibril[i][1][0]:
+    for el in questionlist[i][1][0]:
         testlist.append(el)
-    for el in jibril[i][1][1]:
+    for el in questionlist[i][1][1]:
         answlist.append(el)
 wrongcount = 0
 for i in range(len(testlist)):
