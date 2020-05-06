@@ -1,41 +1,18 @@
 from random import randrange
 import time
 
-a   = list("あいうえお")
-Ra  = ["a", "i", "u", "e", "o"]
-ka  = list("かきくけこ")
-Rka = ["ka","ki","ku","ke","ko"]
-sa  = list("さしすせそ")
-Rsa = ["sa","shi","su","se","so"]
-ta  = list("たちつてと")
-Rta = ["ta","chi","tsu","te","to"]
-na  = list("なにぬねの")
-Rna = ["na","ni","nu","ne","no"]
-ha  = list("はひふへほ")
-Rha = ["ha","hi","fu","he","ho"]
-ma  = list("まみむめも")
-Rma = ["ma","mi","mu","me","mo"]
-ya  = list("やゆよ")
-Rya = ["ya","yu","yo"]
-ra  = list("らりるれろ")
-Rra = ["ra","ri","ru","re","ro"]
-wa  = list("わゐゑを")
-Rwa = ["wa","wi","we","wo"]
-n   = list("ん")
-Rn  = ["n"]
-
 questionlist = [
-    ["a", [a,Ra]],
-    ["ka",[ka,Rka]],
-    ["sa",[sa,Rsa]],
-    ["ta",[ta,Rta]],
-    ["na",[na,Rna]],
-    ["ha",[ha,Rha]],
-    ["ma",[ma,Rma]],
-    ["ya",[ya,Rya]],
-    ["ra",[ra,Rra]],
-    ["wa",[wa,Rwa]],
-    ["n", [n,Rn]]
+    ["a", [['あ', 'い', 'う', 'え', 'お'],["a", "i", "u", "e", "o"]]],
+    ["ka",[['か', 'き', 'く', 'け', 'こ'],["ka","ki","ku","ke","ko"]]],
+    ["sa",[['さ', 'し', 'す', 'せ', 'そ'],["sa","shi","su","se","so"]]],
+    ["ta",[['た', 'ち', 'つ', 'て', 'と'],["ta","chi","tsu","te","to"]]],
+    ["na",[['な', 'に', 'ぬ', 'ね', 'の'],["na","ni","nu","ne","no"]]],
+    ["ha",[['は', 'ひ', 'ふ', 'へ', 'ほ'],["ha","hi","fu","he","ho"]]],
+    ["ma",[['ま', 'み', 'む', 'め', 'も'],["ma","mi","mu","me","mo"]]],
+    ["ya",[['や', 'ゆ', 'よ'],["ya","yu","yo"]]],
+    ["ra",[['ら', 'り', 'る', 'れ', 'ろ'],["ra","ri","ru","re","ro"]]],
+    ["wa",[['わ', 'ゐ', 'ゑ', 'を'],["wa","wi","we","wo"]]],
+    ["n", [['ん'],["n"]]]
 ]
 
 print("a/ka/sa/ta/na/ha/ma/ya/ra/wa/n")
