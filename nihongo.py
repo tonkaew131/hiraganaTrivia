@@ -56,6 +56,6 @@ if(wrongcount!=0):
     print("Most mistake is :", end='')
     result = [item for items, c in Counter(wronglist).most_common() 
         for item in [items] * c]
-    result = list(set(result))[:5]
+    result = list(dict.fromkeys(result))[:5]
     for i in result:
-        print(" " + i + " ", end="")
+        print(" " + i, end="")
