@@ -1,4 +1,5 @@
 from random import randrange
+from collections import Counter
 import time
 
 questionlist = [
@@ -31,6 +32,7 @@ for i in range(startindex,stopindex+1):
     for el in questionlist[i][1][1]:
         answlist.append(el)
 wrongcount = 0
+wronglist = []
 starttime = time.time()
 while True:
     if(len(testlist)==0):
@@ -45,6 +47,14 @@ while True:
         print("Correct!!!")
     else:
         print("Wrong, please try again")
+        wronglist.append(testlist[curquestindex])
         wrongcount += 1
 print("Time elapsed : " + str(round(endtime-starttime, 2)) + " seconds")
 print("You have finish from {}({}) to {}({}) with {} mistakes".format(questionlist[startindex][1][0][0],startfrom,questionlist[stopindex][1][0][0],stopat,wrongcount))
+if(wrongcount!=0):
+    print("Most mistake is :", end='')
+    result = [item for items, c in Counter(wronglist).most_common() 
+        for item in [items] * c]
+    result = list(set(result))[:5]
+    for i in result:
+        print(" " + i + " ", end="")
