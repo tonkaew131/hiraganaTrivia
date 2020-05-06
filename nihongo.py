@@ -62,6 +62,6 @@ for i in range(len(testlist)):
         answlist.remove(answlist[curquestindex])
         print("Correct!!!")
     else:
-        print("You're stupid, please try again")
+        print("Wrong, please try again")
         wrongcount += 1
 print("You have finish from {} to {} with {} mistakes".format(startfrom,stopat,wrongcount))
