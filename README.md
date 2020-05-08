@@ -25,6 +25,10 @@ se
 Wrong, please try again
 ```
 
+## Contributing
+
+Feel free to fix my error.
+
 ## Authors
 
 * **Athicha Leksansern** - *Initial work* - [Tonkaew](https://github.com/tonkaew131)
