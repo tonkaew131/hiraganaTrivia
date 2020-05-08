@@ -34,6 +34,7 @@ for i in range(startindex,stopindex+1):
         answlist.append(el)
 wrongcount = 0
 wronglist = []
+wronglistromanji = []
 starttime = time.time()
 while True:
     if(len(testlist)==0):
@@ -49,6 +50,7 @@ while True:
     else:
         print("Wrong, please try again")
         wronglist.append(testlist[curquestindex])
+        wronglistromanji.append(answlist[curquestindex])
         wrongcount += 1
 print("Time elapsed : " + str(round(endtime-starttime, 2)) + " seconds")
 print("You have finish from {}({}) to {}({}) with {} mistakes".format(questionlist[startindex][1][0][0],startfrom,questionlist[stopindex][1][0][0],stopat,wrongcount))
@@ -56,6 +58,9 @@ if(wrongcount!=0):
     print("Most mistake is :", end='')
     result = [item for items, c in Counter(wronglist).most_common() 
         for item in [items] * c]
+    resultromanji = [item for items, c in Counter(wronglistromanji).most_common() 
+        for item in [items] * c]
     result = list(dict.fromkeys(result))[:5]
-    for i in result:
-        print(" " + i, end="")
+    resultromanji = list(dict.fromkeys(resultromanji))[:5]
+    for i in range(len(result)):
+        print(" " + result[i] + "(" + resultromanji[i] + ")", end="")
