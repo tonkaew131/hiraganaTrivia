@@ -2,7 +2,7 @@
 
 For test your hiragana level. This python script will randomly pick hiragana ( and also katakana ) and ask you what it is.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png" width="45%"></img>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Table_hiragana.svg/768px-Table_hiragana.svg.png" width="45%"></img><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Table_katakana.svg/768px-Table_katakana.svg.png" width="45%"></img>
 
 ## Run
 
