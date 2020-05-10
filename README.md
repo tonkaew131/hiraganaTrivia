@@ -1,4 +1,4 @@
-# Hiragana Trivia
+# Hiragana & Katakana Trivia
 
 For test your hiragana level. This python script will randomly pick hiragana ( and also katakana ) and ask you what it is.
 
